@@ -5,46 +5,46 @@ import PageHero from "@/components/PageHero";
 import heroImage from "@/assets/hero-industrial.jpg";
 
 const services = [
-  {
-    icon: Wrench,
-    title: "Air Tool Repair",
-    description: "Expert diagnosis and repair of all pneumatic tools. Fast turnaround to minimize your downtime.",
-  },
-  {
-    icon: Shield,
-    title: "Preventative Maintenance",
-    description: "Scheduled maintenance programs to extend tool life and maximize performance.",
-  },
-  {
-    icon: ShoppingCart,
-    title: "Tool Sales",
-    description: "Premium air tools from industry-leading brands at competitive prices.",
-  },
-  {
-    icon: Cog,
-    title: "Parts Replacement",
-    description: "Genuine replacement parts for all major air tool brands, in stock and ready to ship.",
-  },
-  {
-    icon: Truck,
-    title: "On-Site Service",
-    description: "Mobile technicians available for on-location repairs and maintenance.",
-  },
-];
+{
+  icon: Wrench,
+  title: "Air Tool Repair",
+  description: "Expert diagnosis and repair of all pneumatic tools. Fast turnaround to minimize your downtime."
+},
+{
+  icon: Shield,
+  title: "Preventative Maintenance",
+  description: "Scheduled maintenance programs to extend tool life and maximize performance."
+},
+{
+  icon: ShoppingCart,
+  title: "Tool Sales",
+  description: "Premium air tools from industry-leading brands at competitive prices."
+},
+{
+  icon: Cog,
+  title: "Parts Replacement",
+  description: "Genuine replacement parts for all major air tool brands, in stock and ready to ship."
+},
+{
+  icon: Truck,
+  title: "On-Site Service",
+  description: "Mobile technicians available for on-location repairs and maintenance."
+}];
+
 
 const brands = [
-  "Ingersoll Rand", "Chicago Pneumatic", "Snap-on", "Atlas Copco",
-  "Dynabrade", "Dotco", "Cleco", "Florida Pneumatic"
-];
+"Ingersoll Rand", "Chicago Pneumatic", "Snap-on", "Atlas Copco",
+"Dynabrade", "Dotco", "Cleco", "Florida Pneumatic"];
+
 
 const trustPoints = [
-  "Certified Technicians",
-  "Fast Turnaround",
-  "Competitive Pricing",
-  "All Major Brands",
-  "Warranty on Repairs",
-  "Free Estimates",
-];
+"Certified Technicians",
+"Fast Turnaround",
+"Competitive Pricing",
+"All Major Brands",
+"Warranty on Repairs",
+"Free Estimates"];
+
 
 const Index = () => {
   return (
@@ -54,18 +54,18 @@ const Index = () => {
         title="P.H.E Industrial Solutions"
         subtitle="Professional Air Tool Sales & Repair Services — Keeping Your Operations Running at Peak Performance"
         backgroundImage={heroImage}
-        showCTA
-      />
+        showCTA />
+
 
       {/* Trust Badges */}
       <section className="bg-accent py-4">
         <div className="container mx-auto flex flex-wrap justify-center gap-6 md:gap-10">
-          {trustPoints.map((point) => (
-            <div key={point} className="flex items-center gap-2 text-accent-foreground font-medium text-sm">
+          {trustPoints.map((point) =>
+          <div key={point} className="flex items-center gap-2 text-accent-foreground font-medium text-sm">
               <CheckCircle className="h-4 w-4" />
               {point}
             </div>
-          ))}
+          )}
         </div>
       </section>
 
@@ -82,12 +82,12 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="bg-card border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent/30 transition-all group"
-              >
-                <service.icon className="h-10 w-10 text-accent mb-4 group-hover:scale-110 transition-transform" />
+            {services.map((service) =>
+            <div
+              key={service.title}
+              className="bg-card border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent/30 transition-all group">
+
+                <service.icon className="h-10 w-10 mb-4 group-hover:scale-110 transition-transform text-[#c50d0d]" />
                 <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-foreground mb-2">
                   {service.title}
                 </h3>
@@ -95,7 +95,7 @@ const Index = () => {
                   {service.description}
                 </p>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="text-center mt-10">
@@ -116,11 +116,11 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
             {[
-              { title: "25+ Years Experience", desc: "Decades of expertise in pneumatic tool repair and industrial solutions." },
-              { title: "OEM Parts Guarantee", desc: "We only use genuine manufacturer parts for all repairs and replacements." },
-              { title: "24/7 Emergency Service", desc: "Production can't wait. Our emergency response team is always on call." },
-            ].map((item) => (
-              <div key={item.title} className="text-primary-foreground">
+            { title: "25+ Years Experience", desc: "Decades of expertise in pneumatic tool repair and industrial solutions." },
+            { title: "OEM Parts Guarantee", desc: "We only use genuine manufacturer parts for all repairs and replacements." },
+            { title: "24/7 Emergency Service", desc: "Production can't wait. Our emergency response team is always on call." }].
+            map((item) =>
+            <div key={item.title} className="text-primary-foreground">
                 <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-accent mb-3">
                   {item.title}
                 </h3>
@@ -128,7 +128,7 @@ const Index = () => {
                   {item.desc}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -140,14 +140,14 @@ const Index = () => {
             Brands We <span className="text-accent">Service & Sell</span>
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {brands.map((brand) => (
-              <div
-                key={brand}
-                className="bg-card border border-border rounded-lg p-6 font-heading text-foreground text-lg font-semibold uppercase tracking-wider hover:border-accent/50 transition-colors"
-              >
+            {brands.map((brand) =>
+            <div
+              key={brand}
+              className="bg-card border border-border rounded-lg p-6 font-heading text-foreground text-lg font-semibold uppercase tracking-wider hover:border-accent/50 transition-colors">
+
                 {brand}
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -175,8 +175,8 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>);
+
 };
 
 export default Index;
