@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={pheLogo} alt="P.H.E Industrial Solutions Logo" className="h-14 w-auto" />
+              <img alt="P.H.E Industrial Solutions Logo" className="h-14 w-auto" src="/lovable-uploads/ae3eda96-21b9-495d-a9b0-12a19de10f34.png" />
             </div>
             <h3 className="font-heading text-xl font-bold tracking-wider mb-2">
               P.H.E <span className="text-accent">Industrial</span>
@@ -26,18 +26,18 @@ const Footer = () => {
             <h4 className="font-heading text-lg font-semibold uppercase tracking-wider mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                { to: "/services", label: "Our Services" },
-                { to: "/products", label: "Products" },
-                { to: "/about", label: "About Us" },
-                { to: "/quote", label: "Request a Quote" },
-                { to: "/contact", label: "Contact Us" },
-              ].map((link) => (
-                <li key={link.to}>
+              { to: "/services", label: "Our Services" },
+              { to: "/products", label: "Products" },
+              { to: "/about", label: "About Us" },
+              { to: "/quote", label: "Request a Quote" },
+              { to: "/contact", label: "Contact Us" }].
+              map((link) =>
+              <li key={link.to}>
                   <Link to={link.to} className="text-primary-foreground/70 hover:text-accent transition-colors text-sm">
                     {link.label}
                   </Link>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -77,8 +77,8 @@ const Footer = () => {
           © {new Date().getFullYear()} P.H.E Industrial Solutions. All rights reserved.
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;

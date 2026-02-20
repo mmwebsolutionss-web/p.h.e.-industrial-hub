@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import pheLogo from "@/assets/phe-logo.png";
 
 const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/services", label: "Services" },
-  { to: "/products", label: "Products" },
-  { to: "/about", label: "About Us" },
-  { to: "/contact", label: "Contact" },
-];
+{ to: "/", label: "Home" },
+{ to: "/services", label: "Services" },
+{ to: "/products", label: "Products" },
+{ to: "/about", label: "About Us" },
+{ to: "/contact", label: "Contact" }];
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="bg-primary sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-3">
-          <img src={pheLogo} alt="P.H.E Industrial Solutions Logo" className="h-12 w-auto" />
+          <img alt="P.H.E Industrial Solutions Logo" className="h-12 w-auto" src="/lovable-uploads/ce460de1-0e53-452b-890a-d9af77a6038f.png" />
           <span className="font-heading text-2xl font-bold tracking-wider text-primary-foreground">
             P.H.E <span className="text-accent">Industrial</span>
           </span>
@@ -28,19 +28,19 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden lg:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`font-medium text-sm uppercase tracking-wider transition-colors hover:text-accent ${
-                location.pathname === link.to
-                  ? "text-accent"
-                  : "text-primary-foreground/80"
-              }`}
-            >
+          {navLinks.map((link) =>
+          <Link
+            key={link.to}
+            to={link.to}
+            className={`font-medium text-sm uppercase tracking-wider transition-colors hover:text-accent ${
+            location.pathname === link.to ?
+            "text-accent" :
+            "text-primary-foreground/80"}`
+            }>
+
               {link.label}
             </Link>
-          ))}
+          )}
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
@@ -59,30 +59,30 @@ const Navbar = () => {
         <button
           className="lg:hidden text-primary-foreground"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
+          aria-label="Toggle menu">
+
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
       {/* Mobile menu */}
-      {isOpen && (
-        <div className="lg:hidden bg-primary border-t border-primary-foreground/10 animate-fade-in">
+      {isOpen &&
+      <div className="lg:hidden bg-primary border-t border-primary-foreground/10 animate-fade-in">
           <div className="container mx-auto py-4 flex flex-col gap-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setIsOpen(false)}
-                className={`font-medium text-sm uppercase tracking-wider py-2 transition-colors hover:text-accent ${
-                  location.pathname === link.to
-                    ? "text-accent"
-                    : "text-primary-foreground/80"
-                }`}
-              >
+            {navLinks.map((link) =>
+          <Link
+            key={link.to}
+            to={link.to}
+            onClick={() => setIsOpen(false)}
+            className={`font-medium text-sm uppercase tracking-wider py-2 transition-colors hover:text-accent ${
+            location.pathname === link.to ?
+            "text-accent" :
+            "text-primary-foreground/80"}`
+            }>
+
                 {link.label}
               </Link>
-            ))}
+          )}
             <Link to="/quote" onClick={() => setIsOpen(false)}>
               <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-heading uppercase tracking-wider mt-2">
                 Request a Quote
@@ -90,9 +90,9 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-      )}
-    </nav>
-  );
+      }
+    </nav>);
+
 };
 
 export default Navbar;
