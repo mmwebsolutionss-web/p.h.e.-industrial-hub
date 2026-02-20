@@ -137,7 +137,7 @@ const Index = () => {
       <section className="section-padding bg-background">
         <div className="container mx-auto text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wider text-foreground mb-10">
-            Brands We <span className="text-accent">Service & Sell</span>
+            Brands We <span className="text-[#c50d0d]">Service & Sell</span>
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {brands.map((brand) =>
