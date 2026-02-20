@@ -71,41 +71,41 @@ const Index = () => {
 
       {/* Services Overview */}
       <section className="section-padding bg-background">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wider text-foreground">
-              Our <span className="text-accent">Services</span>
-            </h2>
-            <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-              Complete air tool solutions from sales to service — we do it all.
-            </p>
-          </div>
+        
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) =>
-            <div
-              key={service.title}
-              className="bg-card border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent/30 transition-all group">
 
-                <service.icon className="h-10 w-10 mb-4 group-hover:scale-110 transition-transform text-[#c50d0d]" />
-                <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-foreground mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            )}
-          </div>
 
-          <div className="text-center mt-10">
-            <Link to="/services">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading uppercase tracking-wider">
-                View All Services <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </section>
 
       {/* Why Choose Us */}
