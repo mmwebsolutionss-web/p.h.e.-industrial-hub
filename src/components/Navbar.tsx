@@ -8,7 +8,7 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
   { to: "/products", label: "Products" },
-  { to: "/about", label: "About Us" },
+  { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -17,12 +17,12 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="bg-primary sticky top-0 z-50 shadow-lg">
+    <nav className="bg-primary sticky top-0 z-50 border-b border-primary-foreground/10">
       <div className="container mx-auto flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-3">
-          <img src={pheLogo} alt="P.H.E Industrial Solutions Logo" className="h-12 w-auto" />
-          <span className="font-heading text-2xl font-bold tracking-wider text-primary-foreground">
-            P.H.E <span className="text-accent">Industrial</span>
+          <img src={pheLogo} alt="P.H.E Industrial Solutions" className="h-10 w-auto" />
+          <span className="font-heading text-xl font-bold text-primary-foreground">
+            P.H.E Industrial
           </span>
         </Link>
 
@@ -32,10 +32,10 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={`font-medium text-sm uppercase tracking-wider transition-colors hover:text-accent ${
+              className={`text-sm font-medium transition-colors hover:text-accent ${
                 location.pathname === link.to
                   ? "text-accent"
-                  : "text-primary-foreground/80"
+                  : "text-primary-foreground/70"
               }`}
             >
               {link.label}
@@ -44,13 +44,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+18327393532" className="flex items-center gap-2 text-primary-foreground/80 text-sm">
-            <Phone className="h-4 w-4 text-accent" />
+          <a href="tel:+18327393532" className="flex items-center gap-2 text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors">
+            <Phone className="h-4 w-4" />
             (832) 739-3532
           </a>
           <Link to="/quote">
-            <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading uppercase tracking-wider">
-              Request a Quote
+            <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading text-sm">
+              Get a Quote
             </Button>
           </Link>
         </div>
@@ -67,25 +67,25 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="lg:hidden bg-primary border-t border-primary-foreground/10 animate-fade-in">
+        <div className="lg:hidden bg-primary border-t border-primary-foreground/10">
           <div className="container mx-auto py-4 flex flex-col gap-3">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
                 onClick={() => setIsOpen(false)}
-                className={`font-medium text-sm uppercase tracking-wider py-2 transition-colors hover:text-accent ${
+                className={`text-sm font-medium py-2 transition-colors hover:text-accent ${
                   location.pathname === link.to
                     ? "text-accent"
-                    : "text-primary-foreground/80"
+                    : "text-primary-foreground/70"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
             <Link to="/quote" onClick={() => setIsOpen(false)}>
-              <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-heading uppercase tracking-wider mt-2">
-                Request a Quote
+              <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-heading mt-2">
+                Get a Quote
               </Button>
             </Link>
           </div>
