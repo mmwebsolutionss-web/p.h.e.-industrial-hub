@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import pheLogo from "@/assets/phe-logo.png";
 
 const Footer = () => {
   return (
@@ -8,11 +9,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-xl font-bold tracking-wider mb-4">
+            <div className="flex items-center gap-3 mb-4">
+              <img src={pheLogo} alt="P.H.E Industrial Solutions Logo" className="h-14 w-auto" />
+            </div>
+            <h3 className="font-heading text-xl font-bold tracking-wider mb-2">
               P.H.E <span className="text-accent">Industrial</span>
             </h3>
+            <p className="text-primary-foreground/70 text-xs uppercase tracking-wider mb-3">Handle With Precision</p>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Professional air tool sales, repair, and maintenance. Your trusted partner for industrial pneumatic solutions.
+              Pneumatic • Hydraulic • Electrical — Your trusted partner for industrial solutions.
             </p>
           </div>
 
@@ -54,7 +59,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent shrink-0" />
-                (555) 123-4567
+                (832) 739-3532
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent shrink-0" />
@@ -62,7 +67,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-                Serving the greater metropolitan area
+                1730 Preston St. Bldg C, Pasadena, TX 77502
               </li>
             </ul>
           </div>
