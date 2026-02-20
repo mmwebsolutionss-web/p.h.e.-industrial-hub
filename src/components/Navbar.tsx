@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-primary sticky top-0 z-50 shadow-lg">
-      <div className="container mx-auto flex items-center justify-between py-3">
+      <div className="container py-[12px] flex-row gap-0 mx-0 my-0 px-0 pr-0 pb-[12px] mb-[11px] bg-primary text-primary flex items-start justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img alt="P.H.E Industrial Solutions Logo" className="h-12 w-auto" src="/lovable-uploads/ce460de1-0e53-452b-890a-d9af77a6038f.png" />
           <span className="font-heading text-2xl font-bold tracking-wider text-primary">
