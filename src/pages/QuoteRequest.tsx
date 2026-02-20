@@ -12,14 +12,14 @@ const QuoteRequest = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "", company: "", phone: "", email: "",
-    toolType: "", brand: "", model: "", issue: "", urgency: ""
+    toolType: "", brand: "", model: "", issue: "", urgency: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Quote Request Submitted!",
-      description: "We'll review your request and respond within 24 hours."
+      description: "We'll review your request and respond within 24 hours.",
     });
     setFormData({ name: "", company: "", phone: "", email: "", toolType: "", brand: "", model: "", issue: "", urgency: "" });
   };
@@ -29,8 +29,8 @@ const QuoteRequest = () => {
       <PageHero
         title="Request a Quote"
         subtitle="Fill out the form below and we'll get back to you with a detailed estimate"
-        backgroundImage={heroImage} />
-
+        backgroundImage={heroImage}
+      />
 
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-3xl">
@@ -80,17 +80,17 @@ const QuoteRequest = () => {
                     </SelectContent>
                   </Select>
                 </div>
-                
-
-
-
-
-
-
-
-
-
-
+                <div>
+                  <Label>Urgency</Label>
+                  <Select value={formData.urgency} onValueChange={(v) => setFormData({ ...formData, urgency: v })}>
+                    <SelectTrigger><SelectValue placeholder="Select urgency" /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="standard">Standard (3-5 days)</SelectItem>
+                      <SelectItem value="rush">Rush (1-2 days)</SelectItem>
+                      <SelectItem value="emergency">Emergency (Same day)</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
                 <div>
                   <Label htmlFor="q-brand">Brand</Label>
                   <Input id="q-brand" value={formData.brand} onChange={(e) => setFormData({ ...formData, brand: e.target.value })} placeholder="e.g., Ingersoll Rand" />
@@ -112,8 +112,8 @@ const QuoteRequest = () => {
           </form>
         </div>
       </section>
-    </main>);
-
+    </main>
+  );
 };
 
 export default QuoteRequest;

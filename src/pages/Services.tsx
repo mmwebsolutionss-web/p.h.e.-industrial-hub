@@ -8,31 +8,31 @@ const services = [
   {
     icon: Wrench,
     title: "Air Tool Repair",
-    description: "We repair all makes and models of pneumatic tools. Impact wrenches, grinders, drills, sanders — bring it in or ship it to us. Most repairs are completed within 48 hours.",
+    description: "Complete diagnostic and repair services for all pneumatic tools. Our certified technicians handle everything from minor adjustments to full rebuilds.",
     features: ["Full diagnostic testing", "OEM replacement parts", "48-hour standard turnaround", "Warranty on all repairs"],
   },
   {
     icon: Shield,
     title: "Preventative Maintenance",
-    description: "Don't wait for tools to break. Our scheduled maintenance programs keep your equipment running and extend its lifespan. We'll set up a plan that fits your operation.",
-    features: ["Scheduled service visits", "Lubrication & cleaning", "Performance testing", "Service reports"],
+    description: "Proactive maintenance programs designed to extend tool life, reduce downtime, and lower your total cost of ownership.",
+    features: ["Scheduled maintenance plans", "Lubrication & cleaning", "Performance testing", "Detailed service reports"],
   },
   {
     icon: ShoppingCart,
     title: "Tool Sales",
-    description: "We sell new and certified refurbished air tools from the brands you trust. Not sure what you need? We'll help you pick the right tool for the job.",
+    description: "New and certified refurbished air tools from top manufacturers. We'll help you find the right tool for your application.",
     features: ["Top brand inventory", "Application consultation", "Volume pricing", "Trade-in programs"],
   },
   {
     icon: Cog,
-    title: "Parts & Accessories",
-    description: "We stock genuine parts for all major brands. Need something specific? We can source it. Most in-stock parts ship the same day.",
-    features: ["OEM & aftermarket parts", "Same-day shipping", "Parts lookup help", "Bulk ordering"],
+    title: "Parts Replacement",
+    description: "Extensive inventory of genuine replacement parts for all major brands. Same-day shipping on in-stock items.",
+    features: ["OEM & aftermarket parts", "Same-day shipping", "Parts lookup assistance", "Bulk ordering"],
   },
   {
     icon: Truck,
     title: "On-Site Service",
-    description: "Can't bring tools to us? We'll come to you. Our mobile technicians handle repairs, maintenance, and tool audits right at your facility.",
+    description: "Mobile service technicians come to your facility for repairs, maintenance, and tool audits. Minimize downtime with on-location service.",
     features: ["Mobile repair units", "Scheduled facility visits", "Tool inventory audits", "Emergency callouts"],
   },
 ];
@@ -42,12 +42,12 @@ const Services = () => {
     <main>
       <PageHero
         title="Our Services"
-        subtitle="Everything you need to keep your air tools running"
+        subtitle="Comprehensive air tool solutions to keep your operations running smoothly"
         backgroundImage={servicesHero}
       />
 
       <section className="section-padding bg-background">
-        <div className="container mx-auto space-y-14">
+        <div className="container mx-auto space-y-16">
           {services.map((service, i) => (
             <div
               key={service.title}
@@ -56,16 +56,16 @@ const Services = () => {
               }`}
             >
               <div className="flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <service.icon className="h-7 w-7 text-accent" />
-                  <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
+                <div className="flex items-center gap-3 mb-4">
+                  <service.icon className="h-8 w-8 text-accent" />
+                  <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wider text-foreground">
                     {service.title}
                   </h2>
                 </div>
-                <p className="text-muted-foreground leading-relaxed mb-5">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   {service.description}
                 </p>
-                <ul className="space-y-2 mb-5">
+                <ul className="space-y-2 mb-6">
                   {service.features.map((f) => (
                     <li key={f} className="flex items-center gap-2 text-foreground text-sm">
                       <CheckCircle className="h-4 w-4 text-accent shrink-0" />
@@ -74,13 +74,13 @@ const Services = () => {
                   ))}
                 </ul>
                 <Link to="/quote">
-                  <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading">
+                  <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading uppercase tracking-wider">
                     Get a Quote
                   </Button>
                 </Link>
               </div>
-              <div className="flex-1 w-full lg:max-w-md bg-muted h-56 flex items-center justify-center border border-border">
-                <service.icon className="h-16 w-16 text-muted-foreground/20" />
+              <div className="flex-1 w-full lg:max-w-md bg-muted rounded-lg h-64 flex items-center justify-center">
+                <service.icon className="h-20 w-20 text-muted-foreground/30" />
               </div>
             </div>
           ))}
