@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import pheLogo from "@/assets/phe-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -18,7 +19,8 @@ const Navbar = () => {
   return (
     <nav className="bg-primary sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-3">
+          <img src={pheLogo} alt="P.H.E Industrial Solutions Logo" className="h-12 w-auto" />
           <span className="font-heading text-2xl font-bold tracking-wider text-primary-foreground">
             P.H.E <span className="text-accent">Industrial</span>
           </span>
@@ -42,9 +44,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+15551234567" className="flex items-center gap-2 text-primary-foreground/80 text-sm">
+          <a href="tel:+18327393532" className="flex items-center gap-2 text-primary-foreground/80 text-sm">
             <Phone className="h-4 w-4 text-accent" />
-            (555) 123-4567
+            (832) 739-3532
           </a>
           <Link to="/quote">
             <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading uppercase tracking-wider">

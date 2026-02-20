@@ -167,7 +167,7 @@ const Index = () => {
                 Request a Quote
               </Button>
             </Link>
-            <a href="tel:+15551234567">
+            <a href="tel:+18327393532">
               <Button size="lg" variant="outline" className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10 font-heading uppercase tracking-wider text-lg px-8">
                 <Phone className="mr-2 h-5 w-5" /> Call Now
               </Button>
