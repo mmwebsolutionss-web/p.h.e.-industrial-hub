@@ -70,8 +70,7 @@ const Index = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="section-padding bg-background">
-        
+      
 
 
 
@@ -106,7 +105,8 @@ const Index = () => {
 
 
 
-      </section>
+
+
 
       {/* Why Choose Us */}
       <section className="section-padding bg-primary">
