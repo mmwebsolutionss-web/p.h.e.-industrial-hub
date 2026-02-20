@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Wrench, Shield, ShoppingCart, Cog, Truck, ArrowRight, Phone, CheckCircle } from "lucide-react";
+import { Wrench, Shield, ShoppingCart, Cog, Truck, ArrowRight, Phone } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import heroImage from "@/assets/hero-industrial.jpg";
 
@@ -8,27 +8,27 @@ const services = [
   {
     icon: Wrench,
     title: "Air Tool Repair",
-    description: "Expert diagnosis and repair of all pneumatic tools. Fast turnaround to minimize your downtime.",
+    description: "We diagnose and fix pneumatic tools — impact wrenches, grinders, drills, you name it. Most repairs done in 48 hours.",
   },
   {
     icon: Shield,
     title: "Preventative Maintenance",
-    description: "Scheduled maintenance programs to extend tool life and maximize performance.",
+    description: "Scheduled service plans that catch problems before they shut you down. Keeps your tools running longer.",
   },
   {
     icon: ShoppingCart,
     title: "Tool Sales",
-    description: "Premium air tools from industry-leading brands at competitive prices.",
+    description: "New and refurbished air tools from brands like Ingersoll Rand, Chicago Pneumatic, and Snap-on.",
   },
   {
     icon: Cog,
-    title: "Parts Replacement",
-    description: "Genuine replacement parts for all major air tool brands, in stock and ready to ship.",
+    title: "Parts & Accessories",
+    description: "OEM and aftermarket parts in stock. Same-day shipping on most orders.",
   },
   {
     icon: Truck,
     title: "On-Site Service",
-    description: "Mobile technicians available for on-location repairs and maintenance.",
+    description: "Our mobile techs come to your shop or job site. No need to ship tools out.",
   },
 ];
 
@@ -37,58 +37,34 @@ const brands = [
   "Dynabrade", "Dotco", "Cleco", "Florida Pneumatic"
 ];
 
-const trustPoints = [
-  "Certified Technicians",
-  "Fast Turnaround",
-  "Competitive Pricing",
-  "All Major Brands",
-  "Warranty on Repairs",
-  "Free Estimates",
-];
-
 const Index = () => {
   return (
     <main>
-      {/* Hero */}
       <PageHero
         title="P.H.E Industrial Solutions"
-        subtitle="Professional Air Tool Sales & Repair Services — Keeping Your Operations Running at Peak Performance"
+        subtitle="Air tool sales, repair, and service for shops and facilities across the Houston area."
         backgroundImage={heroImage}
         showCTA
       />
 
-      {/* Trust Badges */}
-      <section className="bg-accent py-4">
-        <div className="container mx-auto flex flex-wrap justify-center gap-6 md:gap-10">
-          {trustPoints.map((point) => (
-            <div key={point} className="flex items-center gap-2 text-accent-foreground font-medium text-sm">
-              <CheckCircle className="h-4 w-4" />
-              {point}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Services Overview */}
+      {/* What We Do */}
       <section className="section-padding bg-background">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wider text-foreground">
-              Our <span className="text-accent">Services</span>
-            </h2>
-            <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-              Complete air tool solutions from sales to service — we do it all.
-            </p>
-          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
+            What We Do
+          </h2>
+          <p className="text-muted-foreground mb-10 max-w-2xl">
+            From a single tool repair to outfitting an entire facility — we handle it all.
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-card border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent/30 transition-all group"
+                className="bg-card border border-border p-6 hover:border-accent/40 transition-colors"
               >
-                <service.icon className="h-10 w-10 text-accent mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-foreground mb-2">
+                <service.icon className="h-8 w-8 text-accent mb-3" />
+                <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -98,78 +74,84 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="mt-10">
             <Link to="/services">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading uppercase tracking-wider">
-                View All Services <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" className="font-heading">
+                All Services <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Why Us */}
       <section className="section-padding bg-primary">
-        <div className="container mx-auto text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wider text-primary-foreground mb-6">
-            Why Choose <span className="text-accent">P.H.E</span>?
+        <div className="container mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-10">
+            Why Shops Trust P.H.E
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            {[
-              { title: "25+ Years Experience", desc: "Decades of expertise in pneumatic tool repair and industrial solutions." },
-              { title: "OEM Parts Guarantee", desc: "We only use genuine manufacturer parts for all repairs and replacements." },
-              { title: "24/7 Emergency Service", desc: "Production can't wait. Our emergency response team is always on call." },
-            ].map((item) => (
-              <div key={item.title} className="text-primary-foreground">
-                <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-accent mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-primary-foreground/70 text-sm leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="font-heading text-lg font-semibold text-accent mb-2">25+ Years in the Business</h3>
+              <p className="text-primary-foreground/70 text-sm leading-relaxed">
+                We've been repairing and selling pneumatic tools since the late '90s. We know these tools inside and out.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-heading text-lg font-semibold text-accent mb-2">OEM Parts Only</h3>
+              <p className="text-primary-foreground/70 text-sm leading-relaxed">
+                No cheap knockoffs. Every repair uses genuine manufacturer parts so your tools last.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-heading text-lg font-semibold text-accent mb-2">Emergency Service Available</h3>
+              <p className="text-primary-foreground/70 text-sm leading-relaxed">
+                Production down? Call us. We offer same-day emergency repairs to get you back up and running.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Brands */}
+      {/* Brands */}
       <section className="section-padding bg-background">
-        <div className="container mx-auto text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wider text-foreground mb-10">
-            Brands We <span className="text-accent">Service & Sell</span>
+        <div className="container mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-8">
+            Brands We Work With
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="flex flex-wrap gap-3">
             {brands.map((brand) => (
-              <div
+              <span
                 key={brand}
-                className="bg-card border border-border rounded-lg p-6 font-heading text-foreground text-lg font-semibold uppercase tracking-wider hover:border-accent/50 transition-colors"
+                className="bg-muted border border-border px-5 py-3 font-heading text-foreground text-sm font-medium"
               >
                 {brand}
-              </div>
+              </span>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-accent py-16 px-4">
-        <div className="container mx-auto text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wider text-accent-foreground mb-4">
-            Ready to Get Started?
-          </h2>
-          <p className="text-accent-foreground/80 mb-8 max-w-lg mx-auto">
-            Contact us today for a free estimate on air tool repair or to discuss your industrial tool needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <section className="bg-accent py-14 px-4">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-accent-foreground mb-2">
+              Need a repair or quote?
+            </h2>
+            <p className="text-accent-foreground/80">
+              Call us or fill out our quote form — we'll get back to you within 24 hours.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
             <Link to="/quote">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading uppercase tracking-wider text-lg px-8">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading px-8">
                 Request a Quote
               </Button>
             </Link>
             <a href="tel:+18327393532">
-              <Button size="lg" variant="outline" className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10 font-heading uppercase tracking-wider text-lg px-8">
-                <Phone className="mr-2 h-5 w-5" /> Call Now
+              <Button size="lg" variant="outline" className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10 font-heading px-8">
+                <Phone className="mr-2 h-5 w-5" /> (832) 739-3532
               </Button>
             </a>
           </div>

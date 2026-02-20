@@ -18,8 +18,8 @@ const QuoteRequest = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Quote Request Submitted!",
-      description: "We'll review your request and respond within 24 hours.",
+      title: "Quote request submitted",
+      description: "We'll review it and get back to you within 24 hours.",
     });
     setFormData({ name: "", company: "", phone: "", email: "", toolType: "", brand: "", model: "", issue: "", urgency: "" });
   };
@@ -28,21 +28,21 @@ const QuoteRequest = () => {
     <main>
       <PageHero
         title="Request a Quote"
-        subtitle="Fill out the form below and we'll get back to you with a detailed estimate"
+        subtitle="Tell us what you need and we'll get back to you with a price"
         backgroundImage={heroImage}
       />
 
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-3xl">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-8">
             {/* Contact Info */}
             <div>
-              <h2 className="font-heading text-xl font-bold uppercase tracking-wider text-foreground mb-4">
-                Contact <span className="text-accent">Information</span>
+              <h2 className="font-heading text-xl font-bold text-foreground mb-4">
+                Your Info
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="q-name">Full Name *</Label>
+                  <Label htmlFor="q-name">Name *</Label>
                   <Input id="q-name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                 </div>
                 <div>
@@ -62,14 +62,14 @@ const QuoteRequest = () => {
 
             {/* Tool Details */}
             <div>
-              <h2 className="font-heading text-xl font-bold uppercase tracking-wider text-foreground mb-4">
-                Tool <span className="text-accent">Details</span>
+              <h2 className="font-heading text-xl font-bold text-foreground mb-4">
+                Tool Details
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <Label>Tool Type *</Label>
                   <Select value={formData.toolType} onValueChange={(v) => setFormData({ ...formData, toolType: v })}>
-                    <SelectTrigger><SelectValue placeholder="Select tool type" /></SelectTrigger>
+                    <SelectTrigger><SelectValue placeholder="Select" /></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="impact-wrench">Impact Wrench</SelectItem>
                       <SelectItem value="die-grinder">Die Grinder</SelectItem>
@@ -83,30 +83,30 @@ const QuoteRequest = () => {
                 <div>
                   <Label>Urgency</Label>
                   <Select value={formData.urgency} onValueChange={(v) => setFormData({ ...formData, urgency: v })}>
-                    <SelectTrigger><SelectValue placeholder="Select urgency" /></SelectTrigger>
+                    <SelectTrigger><SelectValue placeholder="Select" /></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="standard">Standard (3-5 days)</SelectItem>
                       <SelectItem value="rush">Rush (1-2 days)</SelectItem>
-                      <SelectItem value="emergency">Emergency (Same day)</SelectItem>
+                      <SelectItem value="emergency">Emergency (same day)</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
                 <div>
                   <Label htmlFor="q-brand">Brand</Label>
-                  <Input id="q-brand" value={formData.brand} onChange={(e) => setFormData({ ...formData, brand: e.target.value })} placeholder="e.g., Ingersoll Rand" />
+                  <Input id="q-brand" value={formData.brand} onChange={(e) => setFormData({ ...formData, brand: e.target.value })} placeholder="e.g. Ingersoll Rand" />
                 </div>
                 <div>
                   <Label htmlFor="q-model">Model Number</Label>
-                  <Input id="q-model" value={formData.model} onChange={(e) => setFormData({ ...formData, model: e.target.value })} placeholder="e.g., 2235TiMAX" />
+                  <Input id="q-model" value={formData.model} onChange={(e) => setFormData({ ...formData, model: e.target.value })} placeholder="e.g. 2235TiMAX" />
                 </div>
               </div>
               <div className="mt-4">
-                <Label htmlFor="q-issue">Issue Description *</Label>
-                <Textarea id="q-issue" rows={5} required value={formData.issue} onChange={(e) => setFormData({ ...formData, issue: e.target.value })} placeholder="Describe the issue, service needed, or product inquiry..." />
+                <Label htmlFor="q-issue">What do you need? *</Label>
+                <Textarea id="q-issue" rows={4} required value={formData.issue} onChange={(e) => setFormData({ ...formData, issue: e.target.value })} placeholder="Describe the repair, part you need, or what you're looking for..." />
               </div>
             </div>
 
-            <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-heading uppercase tracking-wider text-lg">
+            <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-heading">
               Submit Quote Request
             </Button>
           </form>
