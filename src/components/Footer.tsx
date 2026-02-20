@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <img src={pheLogo} alt="P.H.E Industrial Solutions" className="h-12 w-auto mb-3" />
+            <img alt="P.H.E Industrial Solutions" className="h-12 w-auto mb-3" src="/lovable-uploads/059ab709-72ec-4db5-9e5e-abac0b1be5fd.png" />
             <p className="font-heading text-lg font-bold mb-1">P.H.E Industrial Solutions</p>
             <p className="text-primary-foreground/50 text-xs mb-3">Pneumatic · Hydraulic · Electrical</p>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
@@ -22,18 +22,18 @@ const Footer = () => {
             <h4 className="font-heading text-sm font-semibold mb-4">Pages</h4>
             <ul className="space-y-2">
               {[
-                { to: "/services", label: "Services" },
-                { to: "/products", label: "Products" },
-                { to: "/about", label: "About" },
-                { to: "/quote", label: "Request a Quote" },
-                { to: "/contact", label: "Contact" },
-              ].map((link) => (
-                <li key={link.to}>
+              { to: "/services", label: "Services" },
+              { to: "/products", label: "Products" },
+              { to: "/about", label: "About" },
+              { to: "/quote", label: "Request a Quote" },
+              { to: "/contact", label: "Contact" }].
+              map((link) =>
+              <li key={link.to}>
                   <Link to={link.to} className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
                     {link.label}
                   </Link>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -73,8 +73,8 @@ const Footer = () => {
           © {new Date().getFullYear()} P.H.E Industrial Solutions. All rights reserved.
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
