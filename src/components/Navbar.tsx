@@ -21,8 +21,8 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-3">
           <img alt="P.H.E Industrial Solutions Logo" className="h-12 w-auto" src="/lovable-uploads/ce460de1-0e53-452b-890a-d9af77a6038f.png" />
-          <span className="font-heading text-2xl font-bold tracking-wider text-primary-foreground">
-            P.H.E <span className="text-accent">Industrial</span>
+          <span className="font-heading text-2xl font-bold tracking-wider text-primary">
+            P.H.E <span className="text-primary">Industrial</span>
           </span>
         </Link>
 
