@@ -77,7 +77,7 @@ const Contact = () => {
               </h2>
               <div className="space-y-6 mb-10">
                 {[
-                  { icon: Phone, label: "Phone", value: "(832) 739-3532" },
+                  { icon: Phone, label: "Phone", value: "(713) 505-1217" },
                   { icon: Mail, label: "Email", value: "info@pheindustrial.com" },
                   { icon: MapPin, label: "Address", value: "1730 Preston St. Bldg C, Pasadena, TX 77502" },
                   { icon: Clock, label: "Hours", value: "Mon–Fri: 7AM–5PM | Emergency: 24/7" },

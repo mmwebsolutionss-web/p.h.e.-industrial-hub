@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-4">
           <a className="flex items-center gap-2 text-primary-foreground/80 text-sm" href="tel:+17135051217">
             <Phone className="h-4 w-4 text-accent" />
-            (832) 739-3532
+            (713) 505-1217
           </a>
           <Link to="/quote">
             <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading uppercase tracking-wider">
