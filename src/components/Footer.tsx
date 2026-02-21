@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center text-primary-foreground/50 text-sm">
-          © {new Date().getFullYear()} P.H.E Industrial Solutions. All rights reserved.
+          © {new Date().getFullYear()} P.H.E Industrial Solutions LLC. All rights reserved.
         </div>
       </div>
     </footer>);
