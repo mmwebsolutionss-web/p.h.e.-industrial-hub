@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="bg-primary sticky top-0 z-50 shadow-lg">
       <div className="container py-[12px] flex-row gap-0 mx-0 my-0 px-0 pr-0 pb-[12px] bg-primary text-primary flex items-start justify-between mb-0">
         <Link to="/" className="flex items-center gap-3">
-          <img alt="P.H.E Industrial Solutions Logo" className="h-12 w-auto" src="/lovable-uploads/ce460de1-0e53-452b-890a-d9af77a6038f.png" />
+          <img alt="P.H.E Industrial Solutions LLC Logo" className="h-12 w-auto" src="/lovable-uploads/ce460de1-0e53-452b-890a-d9af77a6038f.png" />
           <span className="font-heading text-2xl font-bold tracking-wider text-primary">
             P.H.E <span className="text-primary">Industrial</span>
           </span>

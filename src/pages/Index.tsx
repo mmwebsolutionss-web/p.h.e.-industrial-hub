@@ -51,7 +51,7 @@ const Index = () => {
     <main>
       {/* Hero */}
       <PageHero
-        title="P.H.E Industrial Solutions"
+        title="P.H.E Industrial Solutions LLC"
         subtitle="Professional Air Tool Sales & Repair Services — Keeping Your Operations Running at Peak Performance"
         backgroundImage={heroImage}
         showCTA />

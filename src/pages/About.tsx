@@ -21,7 +21,7 @@ const About = () => {
           </h2>
           <div className="text-muted-foreground leading-relaxed space-y-4">
             <p>
-              P.H.E Industrial Solutions was founded with a simple mission: provide
+              P.H.E Industrial Solutions LLC was founded with a simple mission: provide
               reliable, high-quality air tool repair and sales services to the
               industries that depend on them. From automotive shops to manufacturing
               plants, our customers rely on their pneumatic tools every day — and
