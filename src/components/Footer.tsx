@@ -49,7 +49,7 @@ const Footer = () => {
               <li>Preventative Maintenance</li>
               <li>Tool Sales</li>
               <li>Parts Replacement</li>
-              <li>On-Site Service</li>
+              
             </ul>
           </div>
 
