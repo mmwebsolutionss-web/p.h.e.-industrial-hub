@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent shrink-0" />
-                info@pheindustrial.com
+                sales@pheindustrialsolutionsllc.com
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-accent shrink-0 mt-0.5" />
