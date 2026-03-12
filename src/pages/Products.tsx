@@ -6,6 +6,7 @@ import impactWrenchImg from "@/assets/impact-wrench.jpg";
 import dieGrinderImg from "@/assets/die-grinder.png";
 import airDrillImg from "@/assets/air-drill.png";
 import chippingHammerImg from "@/assets/chipping-hammer.png";
+import clayDiggerImg from "@/assets/clay-digger.png";
 
 const categories = [
 {
@@ -35,7 +36,8 @@ const categories = [
 {
   title: "clay diggers",
   description: "Powerful pneumatic tools designed for excavating stiff clay and hard ground.",
-  specs: "Standard and extended reach models available"
+  specs: "Standard and extended reach models available",
+  image: clayDiggerImg
 },
 {
   title: "Specialty Tools",
