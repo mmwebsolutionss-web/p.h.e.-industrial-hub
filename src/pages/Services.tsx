@@ -72,7 +72,7 @@ const Services = () => {
                 <ul className="space-y-2 mb-6">
                   {service.features.map((f) =>
                 <li key={f} className="flex items-center gap-2 text-foreground text-sm">
-                      <CheckCircle className="h-4 w-4 text-accent shrink-0" />
+                      <CheckCircle className="h-4 w-4 shrink-0 text-black" />
                       {f}
                     </li>
                 )}
