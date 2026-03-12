@@ -29,7 +29,8 @@ const categories = [
 {
   title: "chipping hammers",
   description: "Heavy-duty tool designed for removing slag and cleaning welds.",
-  specs: "Various head styles and durable handle options."
+  specs: "Various head styles and durable handle options.",
+  image: chippingHammerImg
 },
 {
   title: "Air Compressors",
