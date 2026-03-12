@@ -114,11 +114,10 @@ const Index = () => {
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wider text-primary-foreground mb-6">
             Why Choose <span className="text-accent">P.H.E</span>?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
             {[
             { title: "25+ Years Experience", desc: "Decades of expertise in pneumatic tool repair and industrial solutions." },
-            { title: "OEM Parts Guarantee", desc: "We only use genuine manufacturer parts for all repairs and replacements." },
-            { title: "24/7 Emergency Service", desc: "Production can't wait. Our emergency response team is always on call." }].
+            { title: "OEM Parts Guarantee", desc: "We only use genuine manufacturer parts for all repairs and replacements." }].
             map((item) =>
             <div key={item.title} className="text-primary-foreground">
                 <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-accent mb-3">
