@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
 import productsHero from "@/assets/products-hero.jpg";
+import impactWrenchImg from "@/assets/impact-wrench.jpg";
 
 const categories = [
 {
   title: "Impact Wrenches",
   description: "High-torque pneumatic impact wrenches for automotive and industrial applications.",
-  specs: "1/4\" to 1\" drive sizes available"
+  specs: "1/4\" to 1\" drive sizes available",
+  image: impactWrenchImg
 },
 {
   title: "Die Grinders",
@@ -53,11 +55,15 @@ const Products = () => {
               key={cat.title}
               className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all group">
               
-                <div className="h-48 bg-muted flex items-center justify-center">
-                  <span className="font-heading text-muted-foreground/30 text-xl uppercase tracking-wider">
-                    {cat.title}
-                  </span>
-                </div>
+                {cat.image ? (
+                  <img src={cat.image} alt={cat.title} className="w-full h-48 object-cover" />
+                ) : (
+                  <div className="h-48 bg-muted flex items-center justify-center">
+                    <span className="font-heading text-muted-foreground/30 text-xl uppercase tracking-wider">
+                      {cat.title}
+                    </span>
+                  </div>
+                )}
                 <div className="p-6">
                   <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-foreground mb-2">
                     {cat.title}
