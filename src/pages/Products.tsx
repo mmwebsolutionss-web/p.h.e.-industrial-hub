@@ -67,7 +67,7 @@ const Products = () => {
                   </p>
                   <p className="text-xs font-medium mb-4 text-black">{cat.specs}</p>
                   <Link to="/quote">
-                    <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground font-heading uppercase tracking-wider text-sm">
+                    <Button className="w-full bg-foreground text-background hover:bg-foreground/90 font-heading uppercase tracking-wider text-sm">
                       Inquire Now
                     </Button>
                   </Link>
