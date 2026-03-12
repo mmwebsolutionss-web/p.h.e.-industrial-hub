@@ -4,37 +4,37 @@ import PageHero from "@/components/PageHero";
 import productsHero from "@/assets/products-hero.jpg";
 
 const categories = [
-  {
-    title: "Impact Wrenches",
-    description: "High-torque pneumatic impact wrenches for automotive and industrial applications.",
-    specs: "1/4\" to 1\" drive sizes available",
-  },
-  {
-    title: "Die Grinders",
-    description: "Precision air grinders for grinding, deburring, and polishing metal surfaces.",
-    specs: "Straight and angle configurations",
-  },
-  {
-    title: "Air Drills",
-    description: "Pneumatic drills offering consistent power and speed for production drilling.",
-    specs: "Reversible and non-reversible models",
-  },
-  {
-    title: "Sanders & Polishers",
-    description: "Orbital, inline, and rotary sanders for surface preparation and finishing.",
-    specs: "Various pad sizes and speeds",
-  },
-  {
-    title: "Air Compressors",
-    description: "Industrial-grade compressors to power your entire pneumatic tool lineup.",
-    specs: "Portable and stationary units",
-  },
-  {
-    title: "Specialty Tools",
-    description: "Riveting tools, needle scalers, air hammers, and other specialty pneumatic equipment.",
-    specs: "Application-specific solutions",
-  },
-];
+{
+  title: "Impact Wrenches",
+  description: "High-torque pneumatic impact wrenches for automotive and industrial applications.",
+  specs: "1/4\" to 1\" drive sizes available"
+},
+{
+  title: "Die Grinders",
+  description: "Precision air grinders for grinding, deburring, and polishing metal surfaces.",
+  specs: "Straight and angle configurations"
+},
+{
+  title: "Air Drills",
+  description: "Pneumatic drills offering consistent power and speed for production drilling.",
+  specs: "Reversible and non-reversible models"
+},
+{
+  title: "Sanders & Polishers",
+  description: "Orbital, inline, and rotary sanders for surface preparation and finishing.",
+  specs: "Various pad sizes and speeds"
+},
+{
+  title: "Air Compressors",
+  description: "Industrial-grade compressors to power your entire pneumatic tool lineup.",
+  specs: "Portable and stationary units"
+},
+{
+  title: "Specialty Tools",
+  description: "Riveting tools, needle scalers, air hammers, and other specialty pneumatic equipment.",
+  specs: "Application-specific solutions"
+}];
+
 
 const Products = () => {
   return (
@@ -42,17 +42,17 @@ const Products = () => {
       <PageHero
         title="Products"
         subtitle="Premium air tools and pneumatic equipment from industry-leading manufacturers"
-        backgroundImage={productsHero}
-      />
+        backgroundImage={productsHero} />
+      
 
       <section className="section-padding bg-background">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categories.map((cat) => (
-              <div
-                key={cat.title}
-                className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all group"
-              >
+            {categories.map((cat) =>
+            <div
+              key={cat.title}
+              className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all group">
+              
                 <div className="h-48 bg-muted flex items-center justify-center">
                   <span className="font-heading text-muted-foreground/30 text-xl uppercase tracking-wider">
                     {cat.title}
@@ -65,7 +65,7 @@ const Products = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed mb-2">
                     {cat.description}
                   </p>
-                  <p className="text-xs text-accent font-medium mb-4">{cat.specs}</p>
+                  <p className="text-xs font-medium mb-4 text-black">{cat.specs}</p>
                   <Link to="/quote">
                     <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground font-heading uppercase tracking-wider text-sm">
                       Inquire Now
@@ -73,12 +73,12 @@ const Products = () => {
                   </Link>
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>);
+
 };
 
 export default Products;
