@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import servicesHero from "@/assets/services-hero.jpg";
 import airToolRepairImg from "@/assets/air-tool-repair.jpg";
 import preventativeMaintenanceImg from "@/assets/preventative-maintenance.jpg";
+import toolSalesImg from "@/assets/tool-sales.jpg";
 
 const services = [
 {
@@ -25,7 +26,8 @@ const services = [
   icon: ShoppingCart,
   title: "Tool Sales",
   description: "New and certified refurbished air tools from top manufacturers. We'll help you find the right tool for your application.",
-  features: ["Top brand inventory", "Application consultation", "Volume pricing"]
+  features: ["Top brand inventory", "Application consultation", "Volume pricing"],
+  image: toolSalesImg
 },
 {
   icon: Cog,
