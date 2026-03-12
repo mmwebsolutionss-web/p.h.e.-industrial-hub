@@ -10,8 +10,8 @@ const About = () => {
       <PageHero
         title="About Us"
         subtitle="Your trusted partner in industrial pneumatic solutions since 1998"
-        backgroundImage={heroImage}
-      />
+        backgroundImage={heroImage} />
+      
 
       {/* Story */}
       <section className="section-padding bg-background">
@@ -28,10 +28,10 @@ const About = () => {
               they rely on us to keep those tools running.
             </p>
             <p>
-              Over the past 25+ years, we've grown from a small repair shop into a
-              full-service industrial supply partner. Today, we offer comprehensive
-              tool sales, repair, maintenance, and on-site services backed by
-              factory-trained technicians and OEM parts.
+              ​While our company is newly established, our team brings over 25 years of industry experience in servicing and supplying air tools. We offer tool sales, repair, maintenance, and on-site service, using quality OEM parts to help keep your operations running smoothly.
+            
+
+
             </p>
           </div>
         </div>
@@ -45,23 +45,23 @@ const About = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              {
-                icon: Target,
-                title: "Our Mission",
-                desc: "To minimize our customers' downtime by providing fast, reliable, and professional air tool services.",
-              },
-              {
-                icon: Award,
-                title: "Quality Commitment",
-                desc: "Every repair uses genuine OEM parts and is performed by certified technicians with rigorous quality control.",
-              },
-              {
-                icon: Users,
-                title: "Customer First",
-                desc: "We build long-term relationships by delivering honest assessments, transparent pricing, and exceptional service.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="text-center">
+            {
+              icon: Target,
+              title: "Our Mission",
+              desc: "To minimize our customers' downtime by providing fast, reliable, and professional air tool services."
+            },
+            {
+              icon: Award,
+              title: "Quality Commitment",
+              desc: "Every repair uses genuine OEM parts and is performed by certified technicians with rigorous quality control."
+            },
+            {
+              icon: Users,
+              title: "Customer First",
+              desc: "We build long-term relationships by delivering honest assessments, transparent pricing, and exceptional service."
+            }].
+            map((item) =>
+            <div key={item.title} className="text-center">
                 <item.icon className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-primary-foreground mb-3">
                   {item.title}
@@ -70,7 +70,7 @@ const About = () => {
                   {item.desc}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -91,8 +91,8 @@ const About = () => {
           </Link>
         </div>
       </section>
-    </main>
-  );
+    </main>);
+
 };
 
 export default About;
