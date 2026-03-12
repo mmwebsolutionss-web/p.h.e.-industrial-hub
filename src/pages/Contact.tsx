@@ -95,8 +95,17 @@ const Contact = () => {
               </div>
 
               {/* Map placeholder */}
-              <div className="bg-muted rounded-lg h-64 flex items-center justify-center border border-border">
-                <p className="text-muted-foreground text-sm">Google Maps Embed Placeholder</p>
+              <div className="rounded-lg h-64 overflow-hidden border border-border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3468.123!2d-95.2093!3d29.6911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z1730+Preston+St+Bldg+C%2C+Pasadena%2C+TX+77502!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="PHE Industrial Location"
+                />
               </div>
             </div>
           </div>
