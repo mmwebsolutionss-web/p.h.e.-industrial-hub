@@ -22,7 +22,8 @@ const categories = [
 {
   title: "Air Drills",
   description: "Pneumatic drills offering consistent power and speed for production drilling.",
-  specs: "Reversible and non-reversible models"
+  specs: "Reversible and non-reversible models",
+  image: airDrillImg
 },
 {
   title: "Sanders & Polishers",
