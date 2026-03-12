@@ -43,7 +43,8 @@ const categories = [
 {
   title: "rivet busters",
   description: "Heavy-duty pneumatic tools for removing rivets and heavy metal demolition.",
-  specs: "Long-stroke and short-stroke models"
+  specs: "Long-stroke and short-stroke models",
+  image: rivetBusterImg
 }];
 
 
