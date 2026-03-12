@@ -31,8 +31,8 @@ const categories = [
   specs: "Various pad sizes and speeds"
 },
 {
-  title: "Air Compressors",
-  description: "Industrial-grade compressors to power your entire pneumatic tool lineup.",
+  title: "clay diggers",
+  description: "Heavy-duty clay diggers built to handle tough soil conditions and demanding excavation work.",
   specs: "Portable and stationary units"
 },
 {
