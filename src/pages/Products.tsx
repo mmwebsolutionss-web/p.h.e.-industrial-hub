@@ -15,7 +15,8 @@ const categories = [
 {
   title: "Die Grinders",
   description: "Precision air grinders for grinding, deburring, and polishing metal surfaces.",
-  specs: "Straight and angle configurations"
+  specs: "Straight and angle configurations",
+  image: dieGrinderImg
 },
 {
   title: "Air Drills",
