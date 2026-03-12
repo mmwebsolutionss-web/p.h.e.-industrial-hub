@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
 import productsHero from "@/assets/products-hero.jpg";
+import impactWrenchImg from "@/assets/impact-wrench.jpg";
 
 const categories = [
 {
   title: "Impact Wrenches",
   description: "High-torque pneumatic impact wrenches for automotive and industrial applications.",
-  specs: "1/4\" to 1\" drive sizes available"
+  specs: "1/4\" to 1\" drive sizes available",
+  image: impactWrenchImg
 },
 {
   title: "Die Grinders",
