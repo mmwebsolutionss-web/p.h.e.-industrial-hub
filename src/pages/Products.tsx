@@ -26,9 +26,9 @@ const categories = [
   image: airDrillImg
 },
 {
-  title: "Sanders & Polishers",
-  description: "Orbital, inline, and rotary sanders for surface preparation and finishing.",
-  specs: "Various pad sizes and speeds"
+  title: "chipping hammers",
+  description: "Heavy-duty tool designed for removing slag and cleaning welds.",
+  specs: "Various head styles and durable handle options."
 },
 {
   title: "Air Compressors",
