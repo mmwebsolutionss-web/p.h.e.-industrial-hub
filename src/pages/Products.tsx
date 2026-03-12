@@ -8,7 +8,8 @@ const categories = [
 {
   title: "Impact Wrenches",
   description: "High-torque pneumatic impact wrenches for automotive and industrial applications.",
-  specs: "1/4\" to 1\" drive sizes available"
+  specs: "1/4\" to 1\" drive sizes available",
+  image: impactWrenchImg
 },
 {
   title: "Die Grinders",
