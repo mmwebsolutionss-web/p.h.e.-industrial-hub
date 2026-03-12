@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import productsHero from "@/assets/products-hero.jpg";
 import impactWrenchImg from "@/assets/impact-wrench.jpg";
 import dieGrinderImg from "@/assets/die-grinder.png";
+import airDrillImg from "@/assets/air-drill.png";
 
 const categories = [
 {
@@ -21,7 +22,8 @@ const categories = [
 {
   title: "Air Drills",
   description: "Pneumatic drills offering consistent power and speed for production drilling.",
-  specs: "Reversible and non-reversible models"
+  specs: "Reversible and non-reversible models",
+  image: airDrillImg
 },
 {
   title: "Sanders & Polishers",
