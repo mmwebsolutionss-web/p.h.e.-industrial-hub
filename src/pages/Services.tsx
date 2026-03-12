@@ -18,7 +18,8 @@ const services = [
   icon: Shield,
   title: "Preventative Maintenance",
   description: "Proactive maintenance programs designed to extend tool life, reduce downtime, and lower your total cost of ownership.",
-  features: ["Scheduled maintenance plans", "Lubrication & cleaning", "Performance testing", "Detailed service reports"]
+  features: ["Scheduled maintenance plans", "Lubrication & cleaning", "Performance testing", "Detailed service reports"],
+  image: preventativeMaintenanceImg
 },
 {
   icon: ShoppingCart,
