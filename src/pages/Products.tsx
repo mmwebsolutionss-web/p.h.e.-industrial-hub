@@ -40,9 +40,9 @@ const categories = [
   image: clayDiggerImg
 },
 {
-  title: "Specialty Tools",
-  description: "Riveting tools, needle scalers, air hammers, and other specialty pneumatic equipment.",
-  specs: "Application-specific solutions"
+  title: "rivet busters",
+  description: "Heavy-duty pneumatic tools for removing rivets and heavy metal demolition.",
+  specs: "Long-stroke and short-stroke models"
 }];
 
 
