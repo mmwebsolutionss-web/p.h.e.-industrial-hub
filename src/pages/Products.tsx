@@ -5,7 +5,6 @@ import productsHero from "@/assets/products-hero.jpg";
 import impactWrenchImg from "@/assets/impact-wrench.jpg";
 import dieGrinderImg from "@/assets/die-grinder.png";
 import airDrillImg from "@/assets/air-drill.png";
-import chippingHammerImg from "@/assets/chipping-hammer.png";
 
 const categories = [
 {
@@ -27,10 +26,9 @@ const categories = [
   image: airDrillImg
 },
 {
-  title: "chipping hammers",
-  description: "Heavy-duty tool designed for removing slag and cleaning welds.",
-  specs: "Various head styles and durable handle options.",
-  image: chippingHammerImg
+  title: "Sanders & Polishers",
+  description: "Orbital, inline, and rotary sanders for surface preparation and finishing.",
+  specs: "Various pad sizes and speeds"
 },
 {
   title: "Air Compressors",
@@ -80,7 +78,7 @@ const Products = () => {
                   <p className="text-xs font-medium mb-4 text-black">{cat.specs}</p>
                   <Link to="/quote">
                     <Button className="w-full bg-foreground text-background hover:bg-foreground/90 font-heading uppercase tracking-wider text-sm">
-                      Inquire Now
+                      ​Portable and tractor-mounted units available.
                     </Button>
                   </Link>
                 </div>
