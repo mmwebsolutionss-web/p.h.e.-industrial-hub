@@ -33,9 +33,9 @@ const categories = [
   image: chippingHammerImg
 },
 {
-  title: "Air Compressors",
-  description: "Industrial-grade compressors to power your entire pneumatic tool lineup.",
-  specs: "Portable and stationary units"
+  title: "clay diggers",
+  description: "Powerful pneumatic tools designed for excavating stiff clay and hard ground.",
+  specs: "Standard and extended reach models available"
 },
 {
   title: "Specialty Tools",
