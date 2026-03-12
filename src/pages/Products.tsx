@@ -7,6 +7,7 @@ import dieGrinderImg from "@/assets/die-grinder.png";
 import airDrillImg from "@/assets/air-drill.png";
 import chippingHammerImg from "@/assets/chipping-hammer.png";
 import clayDiggerImg from "@/assets/clay-digger.png";
+import rivetBusterImg from "@/assets/rivet-buster.png";
 
 const categories = [
 {
