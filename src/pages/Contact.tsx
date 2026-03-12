@@ -97,7 +97,7 @@ const Contact = () => {
               {/* Map placeholder */}
               <div className="rounded-lg h-64 overflow-hidden border border-border">
                 <iframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=1730+Preston+St+Bldg+C,+Pasadena,+TX+77502"
+                  src="https://maps.google.com/maps?q=1730+Preston+St+Bldg+C,+Pasadena,+TX+77502&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
