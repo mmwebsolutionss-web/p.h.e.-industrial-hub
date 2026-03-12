@@ -6,6 +6,7 @@ import servicesHero from "@/assets/services-hero.jpg";
 import airToolRepairImg from "@/assets/air-tool-repair.jpg";
 import preventativeMaintenanceImg from "@/assets/preventative-maintenance.jpg";
 import toolSalesImg from "@/assets/tool-sales.jpg";
+import partsReplacementImg from "@/assets/parts-replacement.jpg";
 
 const services = [
 {
@@ -33,7 +34,8 @@ const services = [
   icon: Cog,
   title: "Parts Replacement",
   description: "Extensive inventory of genuine replacement parts for all major brands. Same-day shipping on in-stock items.",
-  features: ["OEM & aftermarket parts", "Same-day shipping", "Parts lookup assistance", "Bulk ordering"]
+  features: ["OEM & aftermarket parts", "Same-day shipping", "Parts lookup assistance", "Bulk ordering"],
+  image: partsReplacementImg
 },
 {
   icon: Truck,
