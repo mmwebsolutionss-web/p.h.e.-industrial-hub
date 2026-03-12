@@ -81,7 +81,7 @@ const Services = () => {
                   </Button>
                 </Link>
               </div>
-              <div className="flex-1 w-full lg:max-w-md rounded-lg h-64 overflow-hidden" style={{ boxShadow: '0 20px 60px -10px rgba(0,0,0,0.45), 0 8px 20px -6px rgba(0,0,0,0.3)' }}>
+              <div className="flex-1 w-full lg:max-w-md rounded-lg h-64 overflow-hidden" style={{ boxShadow: '0 20px 60px -10px rgba(0,0,0,0.6), 0 8px 20px -6px rgba(0,0,0,0.45)' }}>
                 {service.image ?
               <img src={service.image} alt={service.title} className="w-full h-full object-cover" /> :
 
