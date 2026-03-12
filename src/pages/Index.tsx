@@ -33,8 +33,8 @@ const services = [
 
 
 const brands = [
-"Ingersoll Rand", "Chicago Pneumatic", "Snap-on", "Atlas Copco",
-"Dynabrade", "Dotco", "Cleco", "Florida Pneumatic"];
+"Ingersoll Rand", "Chicago Pneumatic", "Dewalt", "milwaukee",
+"michigan pnueumatic", "Dotco", "Cleco", "apt"];
 
 
 const trustPoints = [
