@@ -37,7 +37,7 @@ const services = [
   icon: Truck,
   title: "On-Site Service",
   description: "Mobile service technicians come to your facility for repairs, maintenance, and tool audits. Minimize downtime with on-location service.",
-  features: ["Mobile repair units", "Scheduled facility visits", "Tool inventory audits", "Emergency callouts"]
+  features: ["Mobile repair units", "Scheduled facility visits"]
 }];
 
 
