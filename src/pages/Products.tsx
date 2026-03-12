@@ -5,6 +5,7 @@ import productsHero from "@/assets/products-hero.jpg";
 import impactWrenchImg from "@/assets/impact-wrench.jpg";
 import dieGrinderImg from "@/assets/die-grinder.png";
 import airDrillImg from "@/assets/air-drill.png";
+import chippingHammerImg from "@/assets/chipping-hammer.png";
 
 const categories = [
 {
@@ -28,7 +29,8 @@ const categories = [
 {
   title: "chipping hammers",
   description: "Heavy-duty tool designed for removing slag and cleaning welds.",
-  specs: "Various head styles and durable handle options."
+  specs: "Various head styles and durable handle options.",
+  image: chippingHammerImg
 },
 {
   title: "Air Compressors",
