@@ -5,6 +5,7 @@ import productsHero from "@/assets/products-hero.jpg";
 import impactWrenchImg from "@/assets/impact-wrench.jpg";
 import dieGrinderImg from "@/assets/die-grinder.png";
 import airDrillImg from "@/assets/air-drill.png";
+import chippingHammerImg from "@/assets/chipping-hammer.png";
 
 const categories = [
 {
