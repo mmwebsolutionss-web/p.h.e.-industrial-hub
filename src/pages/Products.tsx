@@ -55,15 +55,15 @@ const Products = () => {
               key={cat.title}
               className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all group">
               
-                {cat.image ? (
-                  <img src={cat.image} alt={cat.title} className="w-full h-48 object-cover" />
-                ) : (
-                  <div className="h-48 bg-muted flex items-center justify-center">
+                {cat.image ?
+              <img src={cat.image} alt={cat.title} className="w-full h-48 object-contain" /> :
+
+              <div className="h-48 bg-muted flex items-center justify-center">
                     <span className="font-heading text-muted-foreground/30 text-xl uppercase tracking-wider">
                       {cat.title}
                     </span>
                   </div>
-                )}
+              }
                 <div className="p-6">
                   <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-foreground mb-2">
                     {cat.title}
