@@ -25,7 +25,7 @@ const services = [
   icon: ShoppingCart,
   title: "Tool Sales",
   description: "New and certified refurbished air tools from top manufacturers. We'll help you find the right tool for your application.",
-  features: ["Top brand inventory", "Application consultation", "Volume pricing", "Trade-in programs"]
+  features: ["Top brand inventory", "Application consultation", "Volume pricing"]
 },
 {
   icon: Cog,
