@@ -4,6 +4,7 @@ import { Wrench, Shield, ShoppingCart, Cog, Truck, CheckCircle } from "lucide-re
 import PageHero from "@/components/PageHero";
 import servicesHero from "@/assets/services-hero.jpg";
 import airToolRepairImg from "@/assets/air-tool-repair.jpg";
+import preventativeMaintenanceImg from "@/assets/preventative-maintenance.jpg";
 
 const services = [
 {
