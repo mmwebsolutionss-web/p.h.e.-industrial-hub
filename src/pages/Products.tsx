@@ -56,7 +56,7 @@ const Products = () => {
               className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all group">
               
                 {cat.image ?
-              <img src={cat.image} alt={cat.title} className="w-full h-48 object-contain opacity-100" /> :
+              <img src={cat.image} alt={cat.title} className="w-full h-48 object-contain contrast-110 saturate-[1.15] brightness-105" /> :
 
               <div className="h-48 bg-muted flex items-center justify-center">
                     <span className="font-heading text-muted-foreground/30 text-xl uppercase tracking-wider">
