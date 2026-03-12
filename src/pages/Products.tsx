@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
 import productsHero from "@/assets/products-hero.jpg";
 import impactWrenchImg from "@/assets/impact-wrench.jpg";
+import dieGrinderImg from "@/assets/die-grinder.png";
 
 const categories = [
 {
@@ -14,7 +15,8 @@ const categories = [
 {
   title: "Die Grinders",
   description: "Precision air grinders for grinding, deburring, and polishing metal surfaces.",
-  specs: "Straight and angle configurations"
+  specs: "Straight and angle configurations",
+  image: dieGrinderImg
 },
 {
   title: "Air Drills",
