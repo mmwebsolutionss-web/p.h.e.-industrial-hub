@@ -34,7 +34,8 @@ const services = [
   icon: Cog,
   title: "Parts Replacement",
   description: "Extensive inventory of genuine replacement parts for all major brands. Same-day shipping on in-stock items.",
-  features: ["OEM & aftermarket parts", "Same-day shipping", "Parts lookup assistance", "Bulk ordering"]
+  features: ["OEM & aftermarket parts", "Same-day shipping", "Parts lookup assistance", "Bulk ordering"],
+  image: partsReplacementImg
 },
 {
   icon: Truck,
