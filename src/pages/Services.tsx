@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Wrench, Shield, ShoppingCart, Cog, Truck, CheckCircle } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import servicesHero from "@/assets/services-hero.jpg";
+import airToolRepairImg from "@/assets/air-tool-repair.jpg";
 
 const services = [
   {
@@ -10,6 +11,7 @@ const services = [
     title: "Air Tool Repair",
     description: "Complete diagnostic and repair services for all pneumatic tools. Our certified technicians handle everything from minor adjustments to full rebuilds.",
     features: ["Full diagnostic testing", "OEM replacement parts", "48-hour standard turnaround", "Warranty on all repairs"],
+    image: airToolRepairImg,
   },
   {
     icon: Shield,
@@ -79,8 +81,14 @@ const Services = () => {
                   </Button>
                 </Link>
               </div>
-              <div className="flex-1 w-full lg:max-w-md bg-muted rounded-lg h-64 flex items-center justify-center">
-                <service.icon className="h-20 w-20 text-muted-foreground/30" />
+              <div className="flex-1 w-full lg:max-w-md rounded-lg h-64 overflow-hidden">
+                {service.image ? (
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover rounded-lg" />
+                ) : (
+                  <div className="w-full h-full bg-muted flex items-center justify-center rounded-lg">
+                    <service.icon className="h-20 w-20 text-muted-foreground/30" />
+                  </div>
+                )}
               </div>
             </div>
           ))}
