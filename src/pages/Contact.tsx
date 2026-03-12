@@ -11,14 +11,14 @@ import heroImage from "@/assets/services-hero.jpg";
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: "", company: "", phone: "", email: "", message: "",
+    name: "", company: "", phone: "", email: "", message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting us. We'll respond within 24 hours.",
+      description: "Thank you for contacting us. We'll respond within 24 hours."
     });
     setFormData({ name: "", company: "", phone: "", email: "", message: "" });
   };
@@ -28,8 +28,8 @@ const Contact = () => {
       <PageHero
         title="Contact Us"
         subtitle="Get in touch with our team for sales, service, or support"
-        backgroundImage={heroImage}
-      />
+        backgroundImage={heroImage} />
+      
 
       <section className="section-padding bg-background">
         <div className="container mx-auto">
@@ -77,21 +77,21 @@ const Contact = () => {
               </h2>
               <div className="space-y-6 mb-10">
                 {[
-                  { icon: Phone, label: "Phone", value: "(713) 505-1217" },
-                  { icon: Mail, label: "Email", value: "info@pheindustrial.com" },
-                  { icon: MapPin, label: "Address", value: "1730 Preston St. Bldg C, Pasadena, TX 77502" },
-                  { icon: Clock, label: "Hours", value: "Mon–Fri: 8AM–5PM" },
-                ].map((item) => (
-                  <div key={item.label} className="flex items-start gap-4">
+                { icon: Phone, label: "Phone", value: "(713) 505-1217" },
+                { icon: Mail, label: "Email", value: "info@pheindustrial.com" },
+                { icon: MapPin, label: "Address", value: "1730 Preston St. Bldg C, Pasadena, TX 77502" },
+                { icon: Clock, label: "Hours", value: "Mon–Fri: 8AM–5PM" }].
+                map((item) =>
+                <div key={item.label} className="flex items-start gap-4">
                     <div className="bg-accent/10 p-3 rounded-lg">
                       <item.icon className="h-5 w-5 text-accent" />
                     </div>
                     <div>
                       <p className="font-semibold text-foreground text-sm">{item.label}</p>
-                      <p className="text-muted-foreground text-sm">{item.value}</p>
+                      <p className="text-sm text-black">{item.value}</p>
                     </div>
                   </div>
-                ))}
+                )}
               </div>
 
               {/* Map placeholder */}
@@ -104,15 +104,15 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="PHE Industrial Location"
-                />
+                  title="PHE Industrial Location" />
+                
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>);
+
 };
 
 export default Contact;
