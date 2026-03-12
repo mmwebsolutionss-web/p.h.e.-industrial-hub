@@ -7,6 +7,7 @@ import airToolRepairImg from "@/assets/air-tool-repair.jpg";
 import preventativeMaintenanceImg from "@/assets/preventative-maintenance.jpg";
 import toolSalesImg from "@/assets/tool-sales.jpg";
 import partsReplacementImg from "@/assets/parts-replacement.jpg";
+import onsiteServiceImg from "@/assets/onsite-service.jpg";
 
 const services = [
 {
@@ -41,7 +42,8 @@ const services = [
   icon: Truck,
   title: "On-Site Service",
   description: "Mobile service technicians come to your facility for repairs, maintenance, and tool audits. Minimize downtime with on-location service.",
-  features: ["Mobile repair units", "Scheduled facility visits"]
+  features: ["Mobile repair units", "Scheduled facility visits"],
+  image: onsiteServiceImg
 }];
 
 
