@@ -36,7 +36,8 @@ const categories = [
 {
   title: "clay diggers",
   description: "Powerful pneumatic tools designed for excavating stiff clay and hard ground.",
-  specs: "Standard and extended reach models available"
+  specs: "Standard and extended reach models available",
+  image: clayDiggerImg
 },
 {
   title: "Specialty Tools",
