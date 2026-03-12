@@ -61,7 +61,7 @@ const Services = () => {
             
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-4">
-                  <service.icon className="h-8 w-8 text-accent" />
+                  <service.icon className="h-8 w-8 bg-primary-foreground border-primary-foreground text-primary-foreground" />
                   <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wider text-foreground">
                     {service.title}
                   </h2>
