@@ -7,6 +7,7 @@ import airToolRepairImg from "@/assets/air-tool-repair.jpg";
 import preventativeMaintenanceImg from "@/assets/preventative-maintenance.jpg";
 import toolSalesImg from "@/assets/tool-sales.jpg";
 import partsReplacementImg from "@/assets/parts-replacement.jpg";
+import onsiteServiceImg from "@/assets/onsite-service.jpg";
 
 const services = [
 {
