@@ -4,6 +4,7 @@ import { Wrench, Shield, ShoppingCart, Cog, Truck, CheckCircle } from "lucide-re
 import PageHero from "@/components/PageHero";
 import servicesHero from "@/assets/services-hero.jpg";
 import airToolRepairImg from "@/assets/air-tool-repair.jpg";
+import preventativeMaintenanceImg from "@/assets/preventative-maintenance.jpg";
 
 const services = [
 {
@@ -17,7 +18,8 @@ const services = [
   icon: Shield,
   title: "Preventative Maintenance",
   description: "Proactive maintenance programs designed to extend tool life, reduce downtime, and lower your total cost of ownership.",
-  features: ["Scheduled maintenance plans", "Lubrication & cleaning", "Performance testing", "Detailed service reports"]
+  features: ["Scheduled maintenance plans", "Lubrication & cleaning", "Performance testing", "Detailed service reports"],
+  image: preventativeMaintenanceImg
 },
 {
   icon: ShoppingCart,
