@@ -78,7 +78,7 @@ const Contact = () => {
               <div className="space-y-6 mb-10">
                 {[
                 { icon: Phone, label: "Phone", value: "(713) 505-1217" },
-                { icon: Mail, label: "Email", value: "info@pheindustrial.com" },
+                { icon: Mail, label: "Email", value: "sales@pheindustrialsolutionsllc.com" },
                 { icon: MapPin, label: "Address", value: "1730 Preston St. Bldg C, Pasadena, TX 77502" },
                 { icon: Clock, label: "Hours", value: "Mon–Fri: 8AM–5PM" }].
                 map((item) =>
