@@ -37,7 +37,7 @@ const Contact = () => {
             {/* Form */}
             <div>
               <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-foreground mb-6">
-                Send Us a <span className="text-accent">Message</span>
+                Send Us a <span className="text-black">Message</span>
               </h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -73,7 +73,7 @@ const Contact = () => {
             {/* Contact Info */}
             <div>
               <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-foreground mb-6">
-                Get In <span className="text-accent">Touch</span>
+                Get In <span className="text-black">Touch</span>
               </h2>
               <div className="space-y-6 mb-10">
                 {[
@@ -84,7 +84,7 @@ const Contact = () => {
                 map((item) =>
                 <div key={item.label} className="flex items-start gap-4">
                     <div className="bg-accent/10 p-3 rounded-lg">
-                      <item.icon className="h-5 w-5 text-accent" />
+                      <item.icon className="h-5 w-5 text-black" />
                     </div>
                     <div>
                       <p className="font-semibold text-foreground text-sm">{item.label}</p>
