@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
 import productsHero from "@/assets/products-hero.jpg";
+import impactWrenchImg from "@/assets/impact-wrench.png";
 
 const categories = [
 {
