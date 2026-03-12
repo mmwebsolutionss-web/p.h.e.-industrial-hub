@@ -56,13 +56,13 @@ const Products = () => {
               className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all group">
               
                 <div className="h-48 bg-muted flex items-center justify-center">
-                {cat.image ? (
-                  <img src={cat.image} alt={cat.title} className="w-full h-full object-contain p-4" />
-                ) : (
-                  <span className="font-heading text-muted-foreground/30 text-xl uppercase tracking-wider">
+                {cat.image ?
+                <img src={cat.image} alt={cat.title} className="w-full h-full object-contain p-4 border-none border-0 border-primary-foreground" /> :
+
+                <span className="font-heading text-muted-foreground/30 text-xl uppercase tracking-wider">
                     {cat.title}
                   </span>
-                )}
+                }
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading text-xl font-semibold uppercase tracking-wider text-foreground mb-2">
