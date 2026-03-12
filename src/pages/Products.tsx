@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
 import productsHero from "@/assets/products-hero.jpg";
 import impactWrenchImg from "@/assets/impact-wrench.jpg";
+import dieGrinderImg from "@/assets/die-grinder.png";
 
 const categories = [
 {
