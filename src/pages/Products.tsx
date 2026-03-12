@@ -7,6 +7,7 @@ import dieGrinderImg from "@/assets/die-grinder.png";
 import airDrillImg from "@/assets/air-drill.png";
 import chippingHammerImg from "@/assets/chipping-hammer.png";
 import clayDiggerImg from "@/assets/clay-digger.png";
+import rivetBusterImg from "@/assets/rivet-buster.png";
 
 const categories = [
 {
@@ -42,7 +43,8 @@ const categories = [
 {
   title: "rivet busters",
   description: "Heavy-duty pneumatic tools for removing rivets and heavy metal demolition.",
-  specs: "Long-stroke and short-stroke models"
+  specs: "Long-stroke and short-stroke models",
+  image: rivetBusterImg
 }];
 
 
