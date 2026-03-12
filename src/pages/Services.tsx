@@ -11,6 +11,7 @@ const services = [
     title: "Air Tool Repair",
     description: "Complete diagnostic and repair services for all pneumatic tools. Our certified technicians handle everything from minor adjustments to full rebuilds.",
     features: ["Full diagnostic testing", "OEM replacement parts", "48-hour standard turnaround", "Warranty on all repairs"],
+    image: airToolRepairImg,
   },
   {
     icon: Shield,
