@@ -81,9 +81,9 @@ const Services = () => {
                   </Button>
                 </Link>
               </div>
-              <div className="flex-1 w-full lg:max-w-md rounded-lg h-64 overflow-hidden">
+              <div className="flex-1 w-full lg:max-w-md rounded-lg h-64 overflow-hidden shadow-xl ring-1 ring-border">
                 {service.image ?
-              <img src={service.image} alt={service.title} className="w-full h-full object-cover rounded-lg shadow-xl" /> :
+              <img src={service.image} alt={service.title} className="w-full h-full object-cover" /> :
 
               <div className="w-full h-full bg-muted flex items-center justify-center rounded-lg">
                     <service.icon className="h-20 w-20 text-muted-foreground/30" />
